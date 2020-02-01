@@ -11,6 +11,7 @@ import { ExampleButtonsComponent } from './example-buttons/example-buttons.compo
 import { ExampleButtonToggleComponent } from './example-button-toggle/example-button-toggle.component';
 import { ExampleIconComponent } from './example-icon/example-icon.component';
 import { ExampleBadgesComponent } from './example-badges/example-badges.component';
+import { ExampleProgressSpinnerComponent } from './example-progress-spinner/example-progress-spinner.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ExampleBadgesComponent } from './example-badges/example-badges.componen
     ExampleButtonsComponent,
     ExampleButtonToggleComponent,
     ExampleIconComponent,
-    ExampleBadgesComponent
+    ExampleBadgesComponent,
+    ExampleProgressSpinnerComponent
   ],
   imports: [
     BrowserModule,

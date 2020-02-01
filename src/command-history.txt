@@ -8,3 +8,6 @@ ng serve -o
 
 ng generate module material
 ng g m material
+
+ng generate component example-buttons
+ng g c example-buttons

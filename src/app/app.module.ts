@@ -8,13 +8,15 @@ import { MaterialModule } from './material/material.module';
 import { AppComponent } from './app.component';
 import { ExampleTypographyComponent } from './example-typography/example-typography.component';
 import { ExampleButtonsComponent } from './example-buttons/example-buttons.component';
+import { ExampleButtonToggleComponent } from './example-button-toggle/example-button-toggle.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleTypographyComponent,
-    ExampleButtonsComponent
+    ExampleButtonsComponent,
+    ExampleButtonToggleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
@@ -14,6 +15,7 @@ import { ExampleBadgesComponent } from './example-badges/example-badges.componen
 import { ExampleProgressSpinnerComponent } from './example-progress-spinner/example-progress-spinner.component';
 import { ExampleProgressBarComponent } from './example-progress-bar/example-progress-bar.component';
 import { ExampleNavbarComponent } from './example-navbar/example-navbar.component';
+import { ExampleSidenavComponent } from './example-sidenav/example-sidenav.component';
 
 
 @NgModule({
@@ -26,13 +28,15 @@ import { ExampleNavbarComponent } from './example-navbar/example-navbar.componen
     ExampleBadgesComponent,
     ExampleProgressSpinnerComponent,
     ExampleProgressBarComponent,
-    ExampleNavbarComponent
+    ExampleNavbarComponent,
+    ExampleSidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

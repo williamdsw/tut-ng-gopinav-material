@@ -17,6 +17,7 @@ import { ExampleProgressBarComponent } from './example-progress-bar/example-prog
 import { ExampleNavbarComponent } from './example-navbar/example-navbar.component';
 import { ExampleSidenavComponent } from './example-sidenav/example-sidenav.component';
 import { ExampleMenuComponent } from './example-menu/example-menu.component';
+import { ExampleListComponent } from './example-list/example-list.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ExampleMenuComponent } from './example-menu/example-menu.component';
     ExampleProgressBarComponent,
     ExampleNavbarComponent,
     ExampleSidenavComponent,
-    ExampleMenuComponent
+    ExampleMenuComponent,
+    ExampleListComponent
   ],
   imports: [
     BrowserModule,

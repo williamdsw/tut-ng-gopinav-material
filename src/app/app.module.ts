@@ -10,6 +10,7 @@ import { ExampleTypographyComponent } from './example-typography/example-typogra
 import { ExampleButtonsComponent } from './example-buttons/example-buttons.component';
 import { ExampleButtonToggleComponent } from './example-button-toggle/example-button-toggle.component';
 import { ExampleIconComponent } from './example-icon/example-icon.component';
+import { ExampleBadgesComponent } from './example-badges/example-badges.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ExampleIconComponent } from './example-icon/example-icon.component';
     ExampleTypographyComponent,
     ExampleButtonsComponent,
     ExampleButtonToggleComponent,
-    ExampleIconComponent
+    ExampleIconComponent,
+    ExampleBadgesComponent
   ],
   imports: [
     BrowserModule,

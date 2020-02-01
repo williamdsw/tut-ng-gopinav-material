@@ -1,0 +1,7 @@
+ng --version
+
+ng new project-name
+
+ng add @angular/material
+
+ng serve -o

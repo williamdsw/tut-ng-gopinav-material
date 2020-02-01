@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ExampleTypographyComponent } from './example-typography/example-typography.component';
 import { ExampleButtonsComponent } from './example-buttons/example-buttons.component';
 import { ExampleButtonToggleComponent } from './example-button-toggle/example-button-toggle.component';
+import { ExampleIconComponent } from './example-icon/example-icon.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ExampleButtonToggleComponent } from './example-button-toggle/example-bu
     AppComponent,
     ExampleTypographyComponent,
     ExampleButtonsComponent,
-    ExampleButtonToggleComponent
+    ExampleButtonToggleComponent,
+    ExampleIconComponent
   ],
   imports: [
     BrowserModule,

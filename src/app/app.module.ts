@@ -13,6 +13,7 @@ import { ExampleIconComponent } from './example-icon/example-icon.component';
 import { ExampleBadgesComponent } from './example-badges/example-badges.component';
 import { ExampleProgressSpinnerComponent } from './example-progress-spinner/example-progress-spinner.component';
 import { ExampleProgressBarComponent } from './example-progress-bar/example-progress-bar.component';
+import { ExampleNavbarComponent } from './example-navbar/example-navbar.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ExampleProgressBarComponent } from './example-progress-bar/example-prog
     ExampleIconComponent,
     ExampleBadgesComponent,
     ExampleProgressSpinnerComponent,
-    ExampleProgressBarComponent
+    ExampleProgressBarComponent,
+    ExampleNavbarComponent
   ],
   imports: [
     BrowserModule,

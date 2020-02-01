@@ -1,0 +1,37 @@
+<div>
+    <mat-menu #appMenu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="subFrontMenu"> FrontEnd </button>
+        <button mat-menu-item [matMenuTriggerFor]="subBackendMenu"> BackEnd </button>
+    </mat-menu>
+    
+    <button mat-flat-button color="accent" [matMenuTriggerFor]="appMenu"> Menu </button>    
+
+    <mat-menu #subFrontMenu="matMenu">
+        <button mat-menu-item> Angular </button>
+        <button mat-menu-item> React </button>
+        <button mat-menu-item> Vue </button>
+    </mat-menu>
+    
+    <mat-menu #subBackendMenu="matMenu">
+        <button mat-menu-item> Java </button>
+        <button mat-menu-item> C# </button>
+        <button mat-menu-item> PHP </button>
+    </mat-menu>
+</div>
+
+<div>
+    <!-- matMenuContent = indica que o template e o conteudo do matMenu -->
+    <!-- let-name = cria uma variavel local -->
+    <mat-menu #lazyMenu="matMenu">
+        <ng-template matMenuContent let-name="name" let-hobby="hobby">
+            <button mat-menu-item> Settings </button>
+            <button mat-menu-item> Hobby is {{ hobby }} </button>
+            <button mat-menu-item> Logout {{ name }} </button>
+        </ng-template>
+    </mat-menu>
+
+    <!-- matMenuTriggerFor = abre o menu especificado -->
+    <!-- matMenuTriggerData = passa um objeto com valores para o ng-template -->
+    <button mat-raised-button [matMenuTriggerFor]="lazyMenu" [matMenuTriggerData]="{ name: 'Vishwas', hobby: 'football' }"> Vishwas </button>
+    <button mat-raised-button [matMenuTriggerFor]="lazyMenu" [matMenuTriggerData]="{ name: 'Codevolution', hobby: 'teaching' }"> Codevolution </button>
+</div>

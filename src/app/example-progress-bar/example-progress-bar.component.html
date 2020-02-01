@@ -1,0 +1,14 @@
+<div><mat-progress-bar></mat-progress-bar></div>
+<div><mat-progress-bar value="50"></mat-progress-bar></div>
+<div><mat-progress-bar value="100"></mat-progress-bar></div>
+
+<div><mat-progress-bar value="50" color="primary"></mat-progress-bar></div>
+<div><mat-progress-bar value="50" color="accent"></mat-progress-bar></div>
+<div><mat-progress-bar value="50" color="warn"></mat-progress-bar></div>
+
+<div><mat-progress-bar mode="indeterminate"></mat-progress-bar></div>
+<div><mat-progress-bar mode="buffer"></mat-progress-bar></div>
+<div><mat-progress-bar mode="query"></mat-progress-bar></div>
+
+<div><mat-progress-bar #myProgressBar [value]="progressValue"></mat-progress-bar></div>
+<div><button mat-stroked-button (click)="fillProgressBar (myProgressBar.value);">Fill Progress Bar</button></div>

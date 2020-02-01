@@ -12,6 +12,7 @@ import { ExampleButtonToggleComponent } from './example-button-toggle/example-bu
 import { ExampleIconComponent } from './example-icon/example-icon.component';
 import { ExampleBadgesComponent } from './example-badges/example-badges.component';
 import { ExampleProgressSpinnerComponent } from './example-progress-spinner/example-progress-spinner.component';
+import { ExampleProgressBarComponent } from './example-progress-bar/example-progress-bar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ExampleProgressSpinnerComponent } from './example-progress-spinner/exam
     ExampleButtonToggleComponent,
     ExampleIconComponent,
     ExampleBadgesComponent,
-    ExampleProgressSpinnerComponent
+    ExampleProgressSpinnerComponent,
+    ExampleProgressBarComponent
   ],
   imports: [
     BrowserModule,

@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 
 import { AppComponent } from './app.component';
+import { ExampleTypographyComponent } from './example-typography/example-typography.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExampleTypographyComponent
   ],
   imports: [
     BrowserModule,

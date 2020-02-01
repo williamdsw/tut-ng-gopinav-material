@@ -19,6 +19,7 @@ import { ExampleSidenavComponent } from './example-sidenav/example-sidenav.compo
 import { ExampleMenuComponent } from './example-menu/example-menu.component';
 import { ExampleListComponent } from './example-list/example-list.component';
 import { ExampleGridListComponent } from './example-grid-list/example-grid-list.component';
+import { ExampleExpansionPanelComponent } from './example-expansion-panel/example-expansion-panel.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ExampleGridListComponent } from './example-grid-list/example-grid-list.
     ExampleSidenavComponent,
     ExampleMenuComponent,
     ExampleListComponent,
-    ExampleGridListComponent
+    ExampleGridListComponent,
+    ExampleExpansionPanelComponent
   ],
   imports: [
     BrowserModule,

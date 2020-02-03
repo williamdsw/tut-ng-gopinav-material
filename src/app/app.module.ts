@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
@@ -25,6 +25,7 @@ import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
 import { ExampleStepperComponent } from './example-stepper/example-stepper.component';
 import { ExampleInputComponent } from './example-input/example-input.component';
 import { ExampleSelectComponent } from './example-select/example-select.component';
+import { ExampleAutocompleteComponent } from './example-autocomplete/example-autocomplete.component';
 
 
 @NgModule({
@@ -47,14 +48,16 @@ import { ExampleSelectComponent } from './example-select/example-select.componen
     ExampleTabsComponent,
     ExampleStepperComponent,
     ExampleInputComponent,
-    ExampleSelectComponent
+    ExampleSelectComponent,
+    ExampleAutocompleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

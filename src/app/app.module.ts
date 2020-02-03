@@ -24,6 +24,7 @@ import { ExampleCardComponent } from './example-card/example-card.component';
 import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
 import { ExampleStepperComponent } from './example-stepper/example-stepper.component';
 import { ExampleInputComponent } from './example-input/example-input.component';
+import { ExampleSelectComponent } from './example-select/example-select.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { ExampleInputComponent } from './example-input/example-input.component';
     ExampleCardComponent,
     ExampleTabsComponent,
     ExampleStepperComponent,
-    ExampleInputComponent
+    ExampleInputComponent,
+    ExampleSelectComponent
   ],
   imports: [
     BrowserModule,

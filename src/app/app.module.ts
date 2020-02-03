@@ -23,6 +23,7 @@ import { ExampleExpansionPanelComponent } from './example-expansion-panel/exampl
 import { ExampleCardComponent } from './example-card/example-card.component';
 import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
 import { ExampleStepperComponent } from './example-stepper/example-stepper.component';
+import { ExampleInputComponent } from './example-input/example-input.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ExampleStepperComponent } from './example-stepper/example-stepper.compo
     ExampleExpansionPanelComponent,
     ExampleCardComponent,
     ExampleTabsComponent,
-    ExampleStepperComponent
+    ExampleStepperComponent,
+    ExampleInputComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,7 @@ import { ExampleGridListComponent } from './example-grid-list/example-grid-list.
 import { ExampleExpansionPanelComponent } from './example-expansion-panel/example-expansion-panel.component';
 import { ExampleCardComponent } from './example-card/example-card.component';
 import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
+import { ExampleStepperComponent } from './example-stepper/example-stepper.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
     ExampleGridListComponent,
     ExampleExpansionPanelComponent,
     ExampleCardComponent,
-    ExampleTabsComponent
+    ExampleTabsComponent,
+    ExampleStepperComponent
   ],
   imports: [
     BrowserModule,

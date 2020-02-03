@@ -29,6 +29,7 @@ import { ExampleAutocompleteComponent } from './example-autocomplete/example-aut
 import { ExampleCheckboxComponent } from './example-checkbox/example-checkbox.component';
 import { ExampleRadioButtonComponent } from './example-radio-button/example-radio-button.component';
 import { ExampleDatePickerComponent } from './example-date-picker/example-date-picker.component';
+import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { ExampleDatePickerComponent } from './example-date-picker/example-date-p
     ExampleCheckboxComponent,
     ExampleRadioButtonComponent,
     ExampleDatePickerComponent,
+    ExampleTooltipComponent,
   ],
   imports: [
     BrowserModule,

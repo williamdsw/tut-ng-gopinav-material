@@ -21,6 +21,7 @@ import { ExampleListComponent } from './example-list/example-list.component';
 import { ExampleGridListComponent } from './example-grid-list/example-grid-list.component';
 import { ExampleExpansionPanelComponent } from './example-expansion-panel/example-expansion-panel.component';
 import { ExampleCardComponent } from './example-card/example-card.component';
+import { ExampleTabsComponent } from './example-tabs/example-tabs.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ExampleCardComponent } from './example-card/example-card.component';
     ExampleListComponent,
     ExampleGridListComponent,
     ExampleExpansionPanelComponent,
-    ExampleCardComponent
+    ExampleCardComponent,
+    ExampleTabsComponent
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,8 @@ import { ExampleStepperComponent } from './example-stepper/example-stepper.compo
 import { ExampleInputComponent } from './example-input/example-input.component';
 import { ExampleSelectComponent } from './example-select/example-select.component';
 import { ExampleAutocompleteComponent } from './example-autocomplete/example-autocomplete.component';
+import { ExampleCheckboxComponent } from './example-checkbox/example-checkbox.component';
+import { ExampleRadioButtonComponent } from './example-radio-button/example-radio-button.component';
 
 
 @NgModule({
@@ -49,7 +51,9 @@ import { ExampleAutocompleteComponent } from './example-autocomplete/example-aut
     ExampleStepperComponent,
     ExampleInputComponent,
     ExampleSelectComponent,
-    ExampleAutocompleteComponent
+    ExampleAutocompleteComponent,
+    ExampleCheckboxComponent,
+    ExampleRadioButtonComponent,
   ],
   imports: [
     BrowserModule,

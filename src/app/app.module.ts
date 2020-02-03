@@ -30,6 +30,8 @@ import { ExampleCheckboxComponent } from './example-checkbox/example-checkbox.co
 import { ExampleRadioButtonComponent } from './example-radio-button/example-radio-button.component';
 import { ExampleDatePickerComponent } from './example-date-picker/example-date-picker.component';
 import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
+import { ExampleSnackbarComponent } from './example-snackbar/example-snackbar.component';
+import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.component';
 
 
 @NgModule({
@@ -58,6 +60,8 @@ import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.compo
     ExampleRadioButtonComponent,
     ExampleDatePickerComponent,
     ExampleTooltipComponent,
+    ExampleSnackbarComponent,
+    CustomSnackBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,6 +71,7 @@ import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.compo
     FormsModule,
     ReactiveFormsModule
   ],
+  entryComponents: [CustomSnackBarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

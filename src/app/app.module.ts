@@ -20,6 +20,7 @@ import { ExampleMenuComponent } from './example-menu/example-menu.component';
 import { ExampleListComponent } from './example-list/example-list.component';
 import { ExampleGridListComponent } from './example-grid-list/example-grid-list.component';
 import { ExampleExpansionPanelComponent } from './example-expansion-panel/example-expansion-panel.component';
+import { ExampleCardComponent } from './example-card/example-card.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ExampleExpansionPanelComponent } from './example-expansion-panel/exampl
     ExampleMenuComponent,
     ExampleListComponent,
     ExampleGridListComponent,
-    ExampleExpansionPanelComponent
+    ExampleExpansionPanelComponent,
+    ExampleCardComponent
   ],
   imports: [
     BrowserModule,

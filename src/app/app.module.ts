@@ -32,6 +32,8 @@ import { ExampleDatePickerComponent } from './example-date-picker/example-date-p
 import { ExampleTooltipComponent } from './example-tooltip/example-tooltip.component';
 import { ExampleSnackbarComponent } from './example-snackbar/example-snackbar.component';
 import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.component';
+import { ExampleDialogComponent } from './example-dialog/example-dialog.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.com
     ExampleTooltipComponent,
     ExampleSnackbarComponent,
     CustomSnackBarComponent,
+    ExampleDialogComponent,
+    DialogExampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,7 +75,7 @@ import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.com
     FormsModule,
     ReactiveFormsModule
   ],
-  entryComponents: [CustomSnackBarComponent],
+  entryComponents: [CustomSnackBarComponent, DialogExampleComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

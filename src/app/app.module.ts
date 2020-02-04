@@ -34,6 +34,7 @@ import { ExampleSnackbarComponent } from './example-snackbar/example-snackbar.co
 import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.component';
 import { ExampleDialogComponent } from './example-dialog/example-dialog.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { ExampleDataTableComponent } from './example-data-table/example-data-table.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     CustomSnackBarComponent,
     ExampleDialogComponent,
     DialogExampleComponent,
+    ExampleDataTableComponent,
   ],
   imports: [
     BrowserModule,

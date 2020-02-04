@@ -1,4 +1,10 @@
 <div>
+    <mat-form-field>
+        <input #filterInput matInput placeholder="Filter" (keyup)="applyFilter (filterInput.value);">
+    </mat-form-field>
+</div>
+
+<div>
     <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
         <!-- position -->

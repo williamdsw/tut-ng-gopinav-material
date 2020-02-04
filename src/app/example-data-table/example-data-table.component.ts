@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material';
 
 import { PeriodicElement } from './periodic-element';
 
@@ -23,7 +24,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ExampleDataTableComponent implements OnInit {
 
   displayedColumns: string[] = ['position', 'name', 'symbol', 'weight'];
-  dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource (ELEMENT_DATA);
 
   constructor() { }
 
@@ -32,6 +33,10 @@ export class ExampleDataTableComponent implements OnInit {
 
   logData(row) {
     console.log (row);
+  }
+
+  applyFilter(value: string) {
+    this.dataSource.filter = value.trim ().toLowerCase ();
   }
 
 }

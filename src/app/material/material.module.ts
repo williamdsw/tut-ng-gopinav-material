@@ -62,7 +62,7 @@ const MATERIAL_COMPONENTS = [
   MatDialogModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
+  MatPaginatorModule,
 ];
 
 @NgModule({

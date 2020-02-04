@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
@@ -35,6 +36,7 @@ import { CustomSnackBarComponent } from './custom-snack-bar/custom-snack-bar.com
 import { ExampleDialogComponent } from './example-dialog/example-dialog.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { ExampleDataTableComponent } from './example-data-table/example-data-table.component';
+import { ExampleVirtualScrollingComponent } from './example-virtual-scrolling/example-virtual-scrolling.component';
 
 
 @NgModule({
@@ -68,6 +70,7 @@ import { ExampleDataTableComponent } from './example-data-table/example-data-tab
     ExampleDialogComponent,
     DialogExampleComponent,
     ExampleDataTableComponent,
+    ExampleVirtualScrollingComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,7 +78,8 @@ import { ExampleDataTableComponent } from './example-data-table/example-data-tab
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ScrollingModule
   ],
   entryComponents: [CustomSnackBarComponent, DialogExampleComponent],
   providers: [],

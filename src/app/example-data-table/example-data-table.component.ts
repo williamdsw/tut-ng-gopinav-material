@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource, MatSort } from '@angular/material';
+import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 
 import { PeriodicElement } from './periodic-element';
 
@@ -27,11 +27,13 @@ export class ExampleDataTableComponent implements OnInit {
   dataSource = new MatTableDataSource (ELEMENT_DATA);
 
   @ViewChild (MatSort, {static: true}) sort: MatSort;
+  @ViewChild (MatPaginator, {static: true}) paginator: MatPaginator;
 
   constructor() { }
 
   ngOnInit() {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
   logData(row) {

@@ -4,8 +4,8 @@
     </mat-form-field>
 </div>
 
-<div>
-    <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+<div class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" matSort>
 
         <!-- position -->
         <ng-container matColumnDef="position">
@@ -35,4 +35,5 @@
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="logData (row);"></mat-row>
     </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 </div>

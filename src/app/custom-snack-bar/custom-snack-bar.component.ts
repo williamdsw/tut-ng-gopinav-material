@@ -9,7 +9,6 @@ export class CustomSnackBarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

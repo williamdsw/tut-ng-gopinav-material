@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ExampleTooltipComponent } from './example-tooltip.component';
 
@@ -6,7 +6,7 @@ describe('ExampleTooltipComponent', () => {
   let component: ExampleTooltipComponent;
   let fixture: ComponentFixture<ExampleTooltipComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ExampleTooltipComponent ]
     })

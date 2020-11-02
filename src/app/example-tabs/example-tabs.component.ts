@@ -2,18 +2,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-tabs',
-  templateUrl: './example-tabs.component.html',
-  styleUrls: ['./example-tabs.component.css']
+  templateUrl: './example-tabs.component.html'
 })
 export class ExampleTabsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  logChange(selectedIndex: number) {
+  public logChange(selectedIndex: number): void {
     console.log (`current tab index: ${selectedIndex} `);
   }
-
 }

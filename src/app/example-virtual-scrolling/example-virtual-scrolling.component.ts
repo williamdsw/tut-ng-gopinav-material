@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleVirtualScrollingComponent implements OnInit {
 
-  numbers: number[] = [];
+  public numbers: number[] = [];
 
   constructor() {
     for (let index = 0; index < 1000; index++) {
@@ -15,7 +15,6 @@ export class ExampleVirtualScrollingComponent implements OnInit {
     }
    }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 import { CustomSnackBarComponent } from '../custom-snack-bar/custom-snack-bar.component';
 
 @Component({
   selector: 'app-example-snackbar',
-  templateUrl: './example-snackbar.component.html',
-  styleUrls: ['./example-snackbar.component.css']
+  templateUrl: './example-snackbar.component.html'
 })
 export class ExampleSnackbarComponent implements OnInit {
 
   constructor(private snackBar: MatSnackBar) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  openSnackBar(message: string, action: string) {
+  public openSnackBar(message: string, action: string): void {
     const snackBarRef = this.snackBar.open (message, action, { duration: 2000});
     snackBarRef.afterDismissed ().subscribe (() => {
       console.log ('The snackbar was dismissed');
@@ -25,7 +24,7 @@ export class ExampleSnackbarComponent implements OnInit {
     });
   }
 
-  openCustomSnackBar() {
+  public openCustomSnackBar(): void {
     this.snackBar.openFromComponent (CustomSnackBarComponent, { duration: 2000 });
   }
 

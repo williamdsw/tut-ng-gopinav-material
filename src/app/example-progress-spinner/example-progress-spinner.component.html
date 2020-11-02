@@ -1,10 +1,27 @@
-<div><mat-progress-spinner value="0"></mat-progress-spinner></div>
-<div><mat-progress-spinner value="50"></mat-progress-spinner></div>
-<div><mat-progress-spinner value="100"></mat-progress-spinner></div>
+<main>
+    <article>
+        <header>
+            <h2> Progress Spinner </h2>
+        </header>
 
-<div><mat-spinner color="primary"></mat-spinner></div>
-<div><mat-spinner color="accent"></mat-spinner></div>
-<div><mat-spinner color="warn"></mat-spinner></div>
+        <mat-progress-spinner class="with-margin"value="0"></mat-progress-spinner>
+        <mat-progress-spinner class="with-margin"value="50"></mat-progress-spinner>
+        <mat-progress-spinner class="with-margin"value="100"></mat-progress-spinner>
+        <mat-progress-spinner class="with-margin"[value]="spinnerValue"></mat-progress-spinner>
+        <div>
+            <button (click)="fillSpinner ();"> Fill Spinner </button>
+        </div>
 
-<div><mat-spinner *ngIf="showSpinner"></mat-spinner></div>
-<div><button (click)="loadData ();"> Load Data </button></div>
+        <mat-spinner class="with-margin"color="primary"></mat-spinner>
+        <mat-spinner class="with-margin"color="accent"></mat-spinner>
+        <mat-spinner class="with-margin"color="warn"></mat-spinner>
+        <mat-spinner class="with-margin"*ngIf="showSpinner"></mat-spinner>
+        <div>
+            <button (click)="loadData ();"> Load Data </button>
+        </div>
+    </article>
+</main>
+
+
+
+

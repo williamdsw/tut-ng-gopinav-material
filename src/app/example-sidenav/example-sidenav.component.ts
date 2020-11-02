@@ -7,20 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleSidenavComponent implements OnInit {
 
-  isOpened: boolean;
+  public isOpened: boolean;
 
   constructor() {
     this.isOpened = false;
-   }
-
-  ngOnInit() {
   }
 
-  onToggleOpened() {
+  ngOnInit() {}
+
+  public onToggleOpened(): void {
     this.isOpened = !this.isOpened;
   }
 
-  log(state) {
+  public log(state): void {
     console.log (state);
   }
 

@@ -11,12 +11,9 @@ body {
     background-size: contain;
 }
 
-h1, h2 {
-    text-align: center;
-}
-
 h1 {
-    color: white ;
+    text-align: center;
+    color: white;
 }
 
 .with-margin {

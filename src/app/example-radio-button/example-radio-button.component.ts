@@ -2,16 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-radio-button',
-  templateUrl: './example-radio-button.component.html',
-  styleUrls: ['./example-radio-button.component.css']
+  templateUrl: './example-radio-button.component.html'
 })
 export class ExampleRadioButtonComponent implements OnInit {
 
-  currentValue: string;
+  public currentValue: string;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

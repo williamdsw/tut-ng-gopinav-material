@@ -2,18 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-select',
-  templateUrl: './example-select.component.html',
-  styleUrls: ['./example-select.component.css']
+  templateUrl: './example-select.component.html'
 })
 export class ExampleSelectComponent implements OnInit {
 
-  selectedValue: string;
-  otherSelectedValue: string;
-  anotherSelectedValue: string;
+  public selectedValue: string;
+  public otherSelectedValue: string;
+  public anotherSelectedValue: string;
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

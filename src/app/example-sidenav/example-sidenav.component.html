@@ -1,27 +1,39 @@
-<!--
-<mat-sidenav-container>
-    <mat-sidenav mode="over" [(opened)]="isOpened"> Sidenav </mat-sidenav>
-    <mat-sidenav mode="push" [(opened)]="isOpened"> Sidenav </mat-sidenav>
-    <mat-sidenav mode="side" [(opened)]="isOpened"> Sidenav </mat-sidenav>
-    <mat-sidenav-content> 
-        <button mat-raised-button (click)="onToggleOpened ();"> Toggle Opened </button>
-    </mat-sidenav-content>
-</mat-sidenav-container>
--->
+<main>
+    <article>
+        <header>
+            <h2> Sidenav </h2>
+        </header>
 
-<!--
-<mat-sidenav-container>
-    <mat-sidenav #mySidenav mode="side"> Sidenav </mat-sidenav>
-    <mat-sidenav-content> 
-        <button mat-raised-button (click)="mySidenav.open ();"> Open </button>
-        <button mat-raised-button (click)="mySidenav.close ();"> Close </button>
-    </mat-sidenav-content>
-</mat-sidenav-container>
--->
+        <!--
+        <mat-sidenav-container>
+            <mat-sidenav mode="over" [(opened)]="isOpened"> Sidenav </mat-sidenav>
+            <mat-sidenav mode="push" [(opened)]="isOpened"> Sidenav </mat-sidenav>
+            <mat-sidenav mode="side" [(opened)]="isOpened"> Sidenav </mat-sidenav>
+            <mat-sidenav-content> 
+                <button mat-raised-button (click)="onToggleOpened ();"> Toggle Opened </button>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+        -->
 
-<mat-sidenav-container>
-    <mat-sidenav #mySidenav mode="side" (opened)="log ('Opened');" (closed)="log ('Closed');" > Sidenav </mat-sidenav>
-    <mat-sidenav-content> 
-        <button mat-raised-button (click)="mySidenav.toggle ();"> Toggle </button>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+        <!--
+        <mat-sidenav-container>
+            <mat-sidenav #mySidenav mode="side"> Sidenav </mat-sidenav>
+            <mat-sidenav-content> 
+                <button mat-raised-button (click)="mySidenav.open ();"> Open </button>
+                <button mat-raised-button (click)="mySidenav.close ();"> Close </button>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+        -->
+
+        <mat-sidenav-container>
+            <mat-sidenav #mySidenav mode="side" (opened)="log ('Opened');" (closed)="log ('Closed');" > 
+                Sidenav 
+            </mat-sidenav>
+            <mat-sidenav-content> 
+                <button mat-raised-button (click)="mySidenav.toggle ();"> 
+                    Toggle 
+                </button>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </article>
+</main>

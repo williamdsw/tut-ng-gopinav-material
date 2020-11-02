@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatProgressBar } from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-example-progress-bar',
@@ -8,23 +7,25 @@ import { MatProgressBar } from '@angular/material/progress-bar';
 })
 export class ExampleProgressBarComponent implements OnInit {
 
-  progressValue: number;
+  public progressValue: number;
 
   constructor() {
     this.progressValue = 0;
    }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  fillProgressBar() {
+  public fillProgressBar(): void {
     this.progressValue = 0;
-    const intervalId = setInterval (() => {
-      this.progressValue += 1;
-      if (this.progressValue > 100) {
-        clearInterval (intervalId);
-      }
-    }, 10);
+
+    setTimeout(() => {
+      const intervalId = setInterval (() => {
+        this.progressValue += 1;
+        if (this.progressValue > 100) {
+          clearInterval (intervalId);
+        }
+      }, 10);
+    }, 1000);
   }
 
 }

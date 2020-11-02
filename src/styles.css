@@ -30,3 +30,11 @@ h1 {
 table {
     width: 100%;
 }
+
+mat-grid-list {
+    height: 200px;
+}
+
+mat-grid-tile {
+    background-color: lightblue;
+}

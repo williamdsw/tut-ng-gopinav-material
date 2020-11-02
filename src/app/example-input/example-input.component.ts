@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-input',
-  templateUrl: './example-input.component.html',
-  styleUrls: ['./example-input.component.css']
+  templateUrl: './example-input.component.html'
 })
 export class ExampleInputComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

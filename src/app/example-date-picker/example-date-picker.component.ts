@@ -2,20 +2,18 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-example-date-picker',
-  templateUrl: './example-date-picker.component.html',
-  styleUrls: ['./example-date-picker.component.css']
+  templateUrl: './example-date-picker.component.html'
 })
 export class ExampleDatePickerComponent implements OnInit {
 
-  minDate = new Date ();
-  maxDate = new Date (2020, 10, 15);
+  public minDate = new Date ();
+  public maxDate = new Date (2020, 10, 15);
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  dateFilter = date => {
+  public dateFilter = (date) => {
     const day = date.getDay ();
     return day !== 0 && day !== 6;
   }

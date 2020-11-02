@@ -1,39 +1,47 @@
-<div>
-    <mat-form-field>
-        <input #filterInput matInput placeholder="Filter" (keyup)="applyFilter (filterInput.value);">
-    </mat-form-field>
-</div>
+<main>
+    <article>
+        <header>
+            <h2> Data Table </h2>
+        </header>
 
-<div class="mat-elevation-z8">
-    <mat-table [dataSource]="dataSource" matSort>
-
-        <!-- position -->
-        <ng-container matColumnDef="position">
-            <mat-header-cell *matHeaderCellDef mat-sort-header> # </mat-header-cell>
-            <mat-cell *matCellDef="let element;"> {{ element.position }} </mat-cell>
-        </ng-container>
-
-        <!-- name -->
-        <ng-container matColumnDef="name">
-            <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-            <mat-cell *matCellDef="let element;"> {{ element.name }} </mat-cell>
-        </ng-container>
-
-        <!-- weight -->
-        <ng-container matColumnDef="weight">
-            <mat-header-cell *matHeaderCellDef mat-sort-header> Weight </mat-header-cell>
-            <mat-cell *matCellDef="let element;"> {{ element.weight }} </mat-cell>
-        </ng-container>
-
-        <!-- symbol -->
-        <ng-container matColumnDef="symbol">
-            <mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </mat-header-cell>
-            <mat-cell *matCellDef="let element;"> {{ element.symbol }} </mat-cell>
-        </ng-container>
-
-        <!-- *matHeaderRowDef = define cabecalhos de acordo com array de string -->
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="logData (row);"></mat-row>
-    </mat-table>
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
-</div>
+        <div class="with-padding">
+            <mat-form-field>
+                <input #filterInput matInput placeholder="Filter" (keyup)="applyFilter (filterInput.value);">
+            </mat-form-field>
+        </div>
+        
+        <div class="with-padding" class="mat-elevation-z8">
+            <mat-table [dataSource]="dataSource" matSort>
+        
+                <!-- position -->
+                <ng-container matColumnDef="position">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> # </mat-header-cell>
+                    <mat-cell *matCellDef="let element;"> {{ element.position }} </mat-cell>
+                </ng-container>
+        
+                <!-- name -->
+                <ng-container matColumnDef="name">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+                    <mat-cell *matCellDef="let element;"> {{ element.name }} </mat-cell>
+                </ng-container>
+        
+                <!-- weight -->
+                <ng-container matColumnDef="weight">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Weight </mat-header-cell>
+                    <mat-cell *matCellDef="let element;"> {{ element.weight }} </mat-cell>
+                </ng-container>
+        
+                <!-- symbol -->
+                <ng-container matColumnDef="symbol">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </mat-header-cell>
+                    <mat-cell *matCellDef="let element;"> {{ element.symbol }} </mat-cell>
+                </ng-container>
+        
+                <!-- *matHeaderRowDef = define cabecalhos de acordo com array de string -->
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="logData (row);"></mat-row>
+            </mat-table>
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </div>
+    </article>
+</main>

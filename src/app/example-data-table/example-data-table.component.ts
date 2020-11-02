@@ -20,16 +20,18 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
   selector: 'app-example-data-table',
-  templateUrl: './example-data-table.component.html',
-  styleUrls: ['./example-data-table.component.css']
+  templateUrl: './example-data-table.component.html'
 })
 export class ExampleDataTableComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource (ELEMENT_DATA);
+  public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  public dataSource = new MatTableDataSource (ELEMENT_DATA);
 
-  @ViewChild (MatSort, {static: true}) sort: MatSort;
-  @ViewChild (MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild (MatSort, {static: true})
+  private sort: MatSort;
+
+  @ViewChild (MatPaginator, {static: true})
+  private paginator: MatPaginator;
 
   constructor() { }
 
@@ -38,11 +40,11 @@ export class ExampleDataTableComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 
-  logData(row) {
+  public logData(row): void {
     console.log (row);
   }
 
-  applyFilter(value: string) {
+  public applyFilter(value: string): void {
     this.dataSource.filter = value.trim ().toLowerCase ();
   }
 

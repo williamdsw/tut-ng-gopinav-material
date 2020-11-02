@@ -1,31 +1,41 @@
-<div>
-    <mat-form-field>
-        <input matInput [matDatepicker]="myDatePicker">
-        <mat-datepicker-toggle matSuffix [for]="myDatePicker"></mat-datepicker-toggle>
-        <mat-datepicker #myDatePicker></mat-datepicker>
-    </mat-form-field>
-</div>
+<main>
+    <article>
+        <header>
+            <h2> Date Picker </h2>
+        </header>
 
-<div>
-    <mat-form-field>
-        <input matInput [matDatepicker]="myOtherDatePicker">
-        <mat-datepicker-toggle matSuffix [for]="myOtherDatePicker"></mat-datepicker-toggle>
-        <mat-datepicker #myOtherDatePicker startView="multi-year"></mat-datepicker>
-    </mat-form-field>
-</div>
+        <div>
+            <mat-form-field>
+                <input matInput [matDatepicker]="myDatePicker" placeholder="Choose a Date">
+                <mat-datepicker-toggle matSuffix [for]="myDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker #myDatePicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        
+        <div>
+            <mat-form-field>
+                <input matInput [matDatepicker]="myOtherDatePicker" placeholder="With min date" [value]="minDate">
+                <mat-datepicker-toggle matSuffix [for]="myOtherDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker #myOtherDatePicker startView="multi-year"></mat-datepicker>
+            </mat-form-field>
+        </div>
+        
+        <div>
+            <mat-form-field>
+                <input matInput [matDatepicker]="myAnotherDatePicker" placeholder="With min and max dates" [min]="minDate" [max]="maxDate">
+                <mat-datepicker-toggle matSuffix [for]="myAnotherDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker #myAnotherDatePicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        
+        <div>
+            <mat-form-field>
+                <input matInput [matDatepicker]="mySecondDatePicker" [matDatepickerFilter]="dateFilter" placeholder="With dates filtered">
+                <mat-datepicker-toggle matSuffix [for]="mySecondDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker #mySecondDatePicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </article>
+</main>
 
-<div>
-    <mat-form-field>
-        <input matInput [matDatepicker]="myAnotherDatePicker" [min]="minDate" [max]="maxDate">
-        <mat-datepicker-toggle matSuffix [for]="myAnotherDatePicker"></mat-datepicker-toggle>
-        <mat-datepicker #myAnotherDatePicker></mat-datepicker>
-    </mat-form-field>
-</div>
 
-<div>
-    <mat-form-field>
-        <input matInput [matDatepicker]="mySecondDatePicker" [matDatepickerFilter]="dateFilter">
-        <mat-datepicker-toggle matSuffix [for]="mySecondDatePicker"></mat-datepicker-toggle>
-        <mat-datepicker #mySecondDatePicker></mat-datepicker>
-    </mat-form-field>
-</div>

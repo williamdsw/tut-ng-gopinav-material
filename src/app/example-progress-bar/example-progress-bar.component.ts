@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatProgressBar } from '@angular/material';
+import { MatProgressBar } from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-example-progress-bar',

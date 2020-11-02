@@ -1,53 +1,17 @@
-<!-- <app-example-typography></app-example-typography> -->
 
-<!-- <app-example-buttons></app-example-buttons> -->
 
-<!-- <app-example-button-toggle></app-example-button-toggle> -->
-
-<!-- <app-example-icon></app-example-icon> -->
-
-<!-- <app-example-badges></app-example-badges> -->
-
-<!-- <app-example-progress-spinner></app-example-progress-spinner> -->
-
-<!-- <app-example-progress-bar></app-example-progress-bar> -->
-
-<!-- <app-example-navbar></app-example-navbar> -->
-
-<!-- <app-example-sidenav></app-example-sidenav> -->
-
-<!-- <app-example-menu></app-example-menu> -->
-
-<!-- <app-example-list></app-example-list> -->
-
-<!-- <app-example-grid-list></app-example-grid-list> -->
-
-<!-- <app-example-expansion-panel></app-example-expansion-panel> -->
-
-<!-- <app-example-card></app-example-card> -->
-
-<!-- <app-example-tabs></app-example-tabs> -->
-
-<!-- <app-example-stepper></app-example-stepper> -->
-
-<!-- <app-example-input></app-example-input> -->
-
-<!-- <app-example-select></app-example-select> -->
-
-<!-- <app-example-autocomplete></app-example-autocomplete> -->
-
-<!-- <app-example-checkbox></app-example-checkbox> --> 
-
-<!-- <app-example-radio-button></app-example-radio-button> -->
-
-<!-- <app-example-date-picker></app-example-date-picker> -->
-
-<!-- <app-example-tooltip></app-example-tooltip> --> 
-
-<!-- <app-example-snackbar></app-example-snackbar> -->
-
-<!-- <app-example-dialog></app-example-dialog> -->
-
-<!-- <app-example-data-table></app-example-data-table> -->
-
-<app-example-virtual-scrolling></app-example-virtual-scrolling>
+<!-- sidenav links -->
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <ul>
+            <li *ngFor="let link of links;">
+                <a [routerLink]="[link.path]" routerLinkActive="active">
+                    {{ link.text }}
+                </a>
+            </li>
+        </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

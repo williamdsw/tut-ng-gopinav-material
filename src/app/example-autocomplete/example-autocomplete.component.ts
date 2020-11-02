@@ -10,21 +10,21 @@ import { map, startWith } from 'rxjs/operators';
 })
 export class ExampleAutocompleteComponent implements OnInit {
 
-  options: string[] = ['Angular', 'React', 'Vue'];
-  objectOptions = [
+  public options: string[] = ['Angular', 'React', 'Vue'];
+  public objectOptions = [
     { name: 'Angular' },
     { name: 'Angular Material' },
     { name: 'React' },
     { name: 'Vue' }
   ];
 
-  myControl = new FormControl ();
-  filteredOptions: Observable<string[]>;
+  public myControl = new FormControl ();
+  public filteredOptions$: Observable<string[]>;
 
   constructor() { }
 
   ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges.pipe (startWith (''),
+    this.filteredOptions$ = this.myControl.valueChanges.pipe (startWith (''),
     map (value => this.filter (value)));
   }
 

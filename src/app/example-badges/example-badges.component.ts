@@ -7,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleBadgesComponent implements OnInit {
 
-  numberOfNotifications: number;
+  public numberOfNotifications: number;
 
   constructor() {
     this.numberOfNotifications = 10;
    }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

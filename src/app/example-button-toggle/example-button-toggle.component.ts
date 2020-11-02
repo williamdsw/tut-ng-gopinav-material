@@ -9,7 +9,6 @@ export class ExampleButtonToggleComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

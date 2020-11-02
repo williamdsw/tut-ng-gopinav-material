@@ -1,28 +1,36 @@
-<div>
-    <mat-button-toggle #toggleButton> Toggle </mat-button-toggle>
-    <mat-button-toggle checked> Toggle </mat-button-toggle>
-    <mat-button-toggle disableRipple> Toggle </mat-button-toggle>
-    <mat-button-toggle disabled> Toggle </mat-button-toggle>
-    {{ toggleButton.checked }}
-</div>
+<main>
+    <article>
+        <header>
+            <h2> Toggle Button </h2>
+        </header>
 
-<div>
-    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
-        <mat-button-toggle value="angular"> Angular </mat-button-toggle>
-        <mat-button-toggle value="react"> React </mat-button-toggle>
-        <mat-button-toggle value="vue"> Vue </mat-button-toggle>
-    </mat-button-toggle-group>
-
-    {{ toggleGroup.value }}
-</div>
-
-<div>
-    <mat-button-toggle-group #toggleGroupMultiple="matButtonToggleGroup" multiple>
-        <mat-button-toggle value="angular"> Angular </mat-button-toggle>
-        <mat-button-toggle value="react"> React </mat-button-toggle>
-        <mat-button-toggle value="vue"> Vue </mat-button-toggle>
-    </mat-button-toggle-group>
-
-    {{ toggleGroupMultiple.value }}
-</div>
-
+        <div>
+            <mat-button-toggle #toggleButton> Toggle </mat-button-toggle>
+            <mat-button-toggle checked> Toggle </mat-button-toggle>
+            <mat-button-toggle disableRipple> Toggle </mat-button-toggle>
+            <mat-button-toggle disabled> Toggle </mat-button-toggle>
+            {{ toggleButton.checked }}
+        </div>
+        
+        <div>
+            <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+                <mat-button-toggle value="angular"> Angular </mat-button-toggle>
+                <mat-button-toggle value="react"> React </mat-button-toggle>
+                <mat-button-toggle value="vue"> Vue </mat-button-toggle>
+            </mat-button-toggle-group>
+        
+            {{ toggleGroup.value }}
+        </div>
+        
+        <div>
+            <mat-button-toggle-group #toggleGroupMultiple="matButtonToggleGroup" multiple>
+                <mat-button-toggle value="angular"> Angular </mat-button-toggle>
+                <mat-button-toggle value="react"> React </mat-button-toggle>
+                <mat-button-toggle value="vue"> Vue </mat-button-toggle>
+            </mat-button-toggle-group>
+        
+            {{ toggleGroupMultiple.value }}
+        </div>
+        
+    </article>
+</main>
